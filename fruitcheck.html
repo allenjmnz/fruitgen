@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Best Fruit Generator</title>
+        <meta name="description" content="Have fun while generating fruits!">
+
+        <meta property="og:title" content="The Best Fruit Generator"/>
+        <meta property="og:description" content="Have fun while generating fruits!"/>
+        <meta property="og:image" content="img/fruit-thumb.png"/>
+
+        <meta name="robots" content="noindex">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section>
+            <div class=outer-div>
+                <h1>Andrea's Fruit Checker</h1>
+                <img id='fruit-img'>
+                <form id='form' autocomplete="off">
+                    <input id='fruit-input' autocomplete="off" type='text' name='answer' placeholder='Write the fruit'>
+                </form>
+                <div id='btn-wrapper'>
+                    <button id='checker' style="display: block;">Check answer</button>
+                    <button id='nextQ' style="display: none;">Next fruit</button>
+                </div>
+                <div id='valDiv'><p id='validation'></p></div>
+                <p id='remaining'></p>
+            </div>
+        </section>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+        <script src="js/fruitcheck.js"></script>
+    </body>
+</html>

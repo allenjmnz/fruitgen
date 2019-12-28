@@ -1,0 +1,367 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*:focus {
+    outline: none;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background: transparent;
+    border-width: 1px;
+    border-color: teal;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.3rem 1rem;
+    color: teal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition-property: color, background;
+    transition-duration: 200ms;
+}
+
+button:hover {
+    background: teal;
+    color: white;
+}
+
+button:disabled {
+    background: transparent;
+    color: lightgray;
+    border-color: lightgray;
+}
+
+p {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+}
+
+form input {
+    font-size: 4rem;
+    text-align: center;
+    color: #444;
+    border-color: #999;
+    border-width: 0px 0px 2px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition-property: border-color;
+    transition-duration: 500ms;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+form input:focus {
+    border-color: #444;
+}
+
+form input::placeholder {
+    color: #DDD;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #444;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    animation: transitionIn 0.75s;
+}
+
+img {
+    height: 40vh;
+    max-height: 400px;
+    min-height: 300px;
+    opacity: 0;
+    margin: 2rem 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+.outer-div {
+    padding: 3rem 5%;
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    justify-content: center;    
+}
+
+#btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+#fruit-name {
+    font-size: 4rem;
+    text-align: center;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+#remaining {
+    font-weight: 100;
+    color: #999;;
+    opacity: 0;
+    animation: transitionIn 0.75s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+#valDiv {
+    height: 2rem;
+}
+
+#nextQ {
+    background: green;
+    border-width: 1px;
+    border-color: green;
+    color: white;
+}
+
+#nextQ:hover {
+    background: darkgreen;
+    border-width: 1px;
+    border-color: darkgreen;
+    color: white;
+}
+
+#nextQ:disabled {
+    background: transparent;
+    color: lightgray;
+    border-color: lightgray;
+}
+
+/* I have to be able to do it like this eventually */
+
+/* #validation {
+    position: absolute;
+    font-size: 5rem;
+} */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* @keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
